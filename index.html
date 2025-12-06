@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Career_verse – Career & Skill Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-left">
+      <div class="logo-circle">R</div>
+      <div class="logo-text">
+        <h1>Career_verse</h1>
+        <p>Hogwarts Hackathon</p>
+      </div>
+    </div>
+    <button class="icon-button" aria-label="Notifications">
+      🔔
+    </button>
+  </header>
+
+  <main class="app-main">
+    <!-- WELCOME VIEW -->
+    <section id="welcome-view" class="view active-view">
+      <div class="hero">
+        <h2>AI-Powered Career &amp; Skill</h2>
+        <h3>Recommendation Platform</h3>
+        <p class="hero-text">
+          A smart platform that helps students align their education with current and future job markets.
+          It analyzes industry trends, in-demand skills, and your profile—interests, skills, education—
+          to recommend personalized learning paths.
+        </p>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            🎯
+            <p>Personalized Paths</p>
+          </div>
+          <div class="feature-card">
+            📚
+            <p>Course Recommendations</p>
+          </div>
+          <div class="feature-card">
+            📈
+            <p>Career Trajectories</p>
+          </div>
+          <div class="feature-card">
+            🤝
+            <p>Mentorship Matching</p>
+          </div>
+        </div>
+
+        <button id="start-questionnaire" class="btn btn-primary">
+          Select Quest
+        </button>
+
+        <p class="small-info">
+          👥 4 Chosen
+        </p>
+      </div>
+    </section>
+
+    <!-- QUESTIONNAIRE VIEW -->
+    <section id="questionnaire-view" class="view">
+      <div class="section-header">
+        <h2>Build Your Profile</h2>
+        <p>Help us understand your aspirations and strengths.</p>
+      </div>
+
+      <!-- Name -->
+      <div class="card">
+        <label class="field-label">Your Name</label>
+        <input
+          type="text"
+          id="student-name"
+          class="text-input"
+          placeholder="Enter your name"
+        />
+      </div>
+
+      <!-- Interests -->
+      <div class="card">
+        <label class="field-label">Your Interests</label>
+        <div id="interests-container" class="chip-grid">
+          <!-- Chips injected by JS -->
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="card">
+        <label class="field-label">Your Skills</label>
+        <div id="skills-container" class="chip-grid">
+          <!-- Chips injected by JS -->
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="card">
+        <label class="field-label">Education Level</label>
+        <div id="education-container" class="chip-grid chip-grid-4">
+          <!-- Chips injected by JS -->
+        </div>
+      </div>
+
+      <div class="button-row">
+        <button id="back-to-welcome" class="btn btn-secondary">
+          Back
+        </button>
+        <button id="generate-btn" class="btn btn-primary">
+          Generate Recommendations
+        </button>
+      </div>
+    </section>
+
+    <!-- RESULTS VIEW -->
+    <section id="results-view" class="view">
+      <div class="section-header">
+        <h2>Your Personalized Career Paths</h2>
+        <p>Based on your profile and current market trends.</p>
+      </div>
+
+      <div id="results-container" class="results-list">
+        <!-- Results injected by JS -->
+      </div>
+
+      <div class="button-row center">
+        <button id="restart-btn" class="btn btn-secondary">
+          Start New Quest
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <p>
+      Empowering students to make informed decisions and build skills that enhance employability.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
